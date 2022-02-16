@@ -1,3 +1,5 @@
+import 'dart:html';
+
 void main()
 {
   var sayilar = <int>[];
@@ -13,4 +15,12 @@ void main()
 
   var ortalama = toplam/sayilar.length;
   print('Ortalama: $ortalama');
+
+  print('*****************************');
+  print(sayilar);
+
+  for(int i=0;i<sayilar.length;i++) sayilar[i] = sayilar[i]*3;
+
+  print('***********Outcome************');
+  print(sayilar);
 }
